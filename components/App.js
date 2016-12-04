@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 
-import CSSModules from 'react-css-modules';
+// import CSSModules from 'react-css-modules';
 import styles from './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div styleName="my-container">Hello World</div>
+      <div className={styles.myContainer}>Hello World</div>
     );
   }
 }
 
-export default CSSModules(App, styles);
+export default App;
+
+// export default CSSModules(App, styles);
